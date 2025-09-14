@@ -1,0 +1,120 @@
+body{
+    font-family: Arial,sans-serif;
+    background: linear-gradient(to right,#6dd5ed,#2193b0);
+    color: #fff;
+    text-align: center;
+    padding:50px;
+}
+.app{
+    background:rgba(0,0,0,0.3) ;
+    padding:20px;
+    border-radius: 12px;
+    max-width:400px;
+    margin:auto;
+}
+input{
+    padding:10px;
+    border-radius: 6px;
+    border: none;
+    width:70%;
+}
+button{
+    padding:10px;
+    border:none;
+    border-radius:6px;
+    background: #ff9800;
+    color:white;
+    cursor:pointer;
+    margin-left:5px;
+}
+#result{
+    background: rgba(255,255,255,0.2);
+    border-radius:15px;
+    padding:20px;
+    margin-top:20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    font-size:18px;
+}
+h1{
+    color:black;
+}
+.subtitle{
+    color:black;
+}
+.background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #87ceeb, #ffffff);
+  overflow: hidden;
+  z-index: -1;
+}
+
+.sun {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  width: 80px;
+  height: 80px;
+  background: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 40px yellow;
+}
+
+.cloud {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+.cloud1 {
+  top: 100px;
+  left: -150px;
+  width: 120px; height: 60px;
+  animation: moveClouds 40s linear infinite;
+}
+.cloud2 {
+  top: 200px;
+  left: -200px;
+  width: 180px; height: 80px;
+  animation: moveClouds 60s linear infinite;
+}
+
+@keyframes moveClouds {
+  0% { left: -200px; }
+  100% { left: 110%; }
+}
+.bird {
+  position: absolute;
+  width: 40px; height: 20px;
+  background: transparent;
+  border-top: 3px solid black;
+  border-radius: 50%;
+}
+.bird1 {
+  top: 150px;
+  left: -50px;
+  animation: flyBirds 20s linear infinite;
+}
+.bird2 {
+  top: 250px;
+  left: -70px;
+  animation: flyBirds 25s linear infinite;
+}
+
+@keyframes flyBirds {
+  0% { left: -80px; transform: scale(1); }
+  100% { left: 110%; transform: scale(1.2); }
+}
+
+/* Stars (for night mode later) */
+.star {
+  position: absolute;
+  width: 5px; height: 5px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px white;
+}
+.star1 { top: 50px; left: 200px; }
+.star2 { top: 120px;left: 400px;}
